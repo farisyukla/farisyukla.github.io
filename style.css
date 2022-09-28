@@ -1,0 +1,121 @@
+body{
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #E1E1E1;
+}
+
+#navigation {
+    background-color: #1DBC60;
+    height: 90vh;
+    overflow-y: scroll;
+    padding-top: 20px;  
+    border-radius: 15px 0 0 15px;  
+}
+
+#body {
+    background-color: #f5f5f5;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+#icon {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    padding-top: 2px;
+}
+
+.icon-twitter {
+    color: blue;
+}
+
+#icon:hover {
+    cursor: pointer;
+}
+
+#container {
+    background-color: black;
+}
+
+#judul {
+    font-size: 15px;
+}
+
+#download-cv {
+    background-color: #1DBC60;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    height: 40px;
+}
+
+.text-underline {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #1DBC60;
+    text-decoration-color: #1DBC60;
+    -webkit-text-decoration-style: under;
+    text-decoration-style: under;
+    -webkit-text-decoration-thickness: 3px;
+    text-decoration-thickness: 3px;
+}
+
+.green-text {
+    color: #1DBC60;;
+}
+
+#list-education {
+    list-style-type: disc;
+    margin-left: -17.5px;
+    font-size: 18px;
+    color:#1DBC60;
+}
+
+.education-list {
+    border-left: 3px solid #1DBC60;
+}
+
+.darken-img {
+    filter: brightness(50);
+}
+
+#margin-0 {
+    margin: 0;
+    padding: 0;
+}
+
+#portofolio {
+    background-color: #f5f5f5;
+    border: 3px solid #1DBC60;
+    border-radius: 5px;
+    color: #212529;
+    height: 40px;
+}
+
+/* TESTING */
+
+.coba{
+    background-color: red;
+    padding-bottom: 1px;
+}
+
+.coba2{
+    background-color: blueviolet;
+}
+
+.coba3 {
+    background-color: aqua;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+/* Hide scrollbar for Chrome, Safari and Opera */
+#navigation::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+#navigation {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

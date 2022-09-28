@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container pt-4">
+    <div class="row">
+        <div class="col-3 text-center d-none d-lg-block" id="navigation">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2">
+                    <img src="img/Lala_Pas_Foto.jpg" alt="foto_lala" width=125 class="thumb rounded-circle">
+                </div>
+                <div class="p-2">
+                    <h2 class="text-light fs-3">Fari's Yukla R. M.</h2>
+                    <p class="text-light" id="judul"><strong>Data Analyst & Visualization</strong></p>
+                </div>
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <div class="rounded-circle text-center" id="icon" width=30>
+                        <p class="icon"><i class="bi bi-linkedin" id="icon-twitter"></i></p>
+                    </div>
+                    <div class="rounded-circle text-center" id="icon" width=30>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="rounded-circle text-center" id="icon" width=30>
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <div class="p-2 mt-4">
+                    <p class="text-light"><i class="bi bi-house-door"></i> Home</strong></p>
+                </div>
+                <div class="p-2">
+                    <p class="text-light"><strong><i class="bi bi-file-earmark-person"></i> About</strong></p>
+                </div>
+                <div class="p-2">
+                    <p class="text-light"><i class="bi bi-book"></i> Eduaction</strong></p>
+                </div>
+                <div class="p-2">
+                    <p class="text-light"><i class="bi bi-clipboard2-check"></i> Skills</strong></p>
+                </div>
+                <div class="p-2">
+                    <p class="text-light"><i class="bi bi-cast"></i> Projects</p>
+                </div>
+                <div class="p-2">
+                    <p class="text-light"><i class="bi bi-person-lines-fill"></i> Contact</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9" id="body">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2">
+                    <div class="row" id="about-body">
+                        <div class="col-md order-md-2 text-center" id="image">
+                            <img src="img/lala_remove_bg.png" alt="lala" width=300>
+                        </div>
+                        <div class="d-flex flex-column col-md pt-4 justify-content-center order-md-1" id="home">
+                            <div class="p-2 pb-0" id="margin-0">
+                                <h4><strong><span class="text-underline">Hi,</span> I'm<br>Fari's Yukla Robiatul Masputra</strong></h4>
+                            </div>
+                            <div class="p-2 pt-0 pb-0" id="margin-0">
+                                <p class="text-black-50"><strong>Data Analyst & Visualization</strong></p>
+                            </div>
+                            <div class="p-2 pb-0 pt-0" id="margin-0">
+                                <button id="download-cv"><i class="bi bi-file-earmark-pdf"></i> Download CV</button>
+                                <button id="portofolio">Portofolio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <h4><strong><span class="text-underline">About</span></strong></h4>
+                    <p>Saya lulusan S1 Statistika. Saya terbiasa menganalisa data menggunakan R studio, excel, dan python. Memiliki pengalaman di bidang data analyst dan visualisasi sebagai peserta magang. Sedang mengikuti pembelajaran tableau, dan google data studio. Mampu bekerja baik secara tim maupun individu</p>
+                    <div class="row">
+                        <div class="col">
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Tempat/Tanggal Lahir:</strong> Ngawi, 23 Mei 2003</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>No. Handphone:</strong> 089624805466</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Kota Asal:</strong> Ngawi, Jawa Timur</p>
+                        </div>
+                        <div class="col">
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Umur:</strong> 22 Tahun</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Agama:</strong> Islam</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Gelar:</strong> Sarjana Statistika</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <h4><strong><span class="text-underline">Education</span></strong></h4>
+                    <div class="education-list mt-3">
+                        <ul id="list-education">
+                            <li> <span class="text-dark"><strong>Universitas Brawijaya</strong> (Agu 2018 - Jul 2022)</span>
+                                <h6 class="text-black-50">Sarjana Statstika</h6>
+                                <p class="text-dark fs-6">Skripsi: Pemodelan Regresi Logistik Data Panel Menggunakan Pendekatan Fixed Effect pada Status Ketahanan Pangan di Jawa Timur</p>
+                                <p class="text-dark fs-6">IPK: 3.43/4.00</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>SMAN 2 Ngawi</strong> (Agu 2015 - Apr 2018)</span>
+                                <h6 class="text-black-50">Ilmu Pengetahuan Alam (IPA)</h6>
+                                <p class="text-dark fs-6">Mempelajari segala jenis ilmu dalam pendidikan terutama berfokus pada ilmu matematika dan IPA</p>
+                                <p class="text-dark fs-6">NEM: 28/40</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <h4><strong><span class="text-underline">Work Experience</span></strong></h4>
+                    <div class="education-list mt-3">
+                        <ul id="list-education">
+                            <li> <span class="text-dark"><strong>Internship Data Analyst & Visualization</strong> (Jul 2021 - Aug 2021)</span>
+                                <h6 class="text-black-50">Badan Pusat Statistik</h6>
+                                <p class="text-dark fs-6">- Melakukan akses data kependudukan Kab. Ngawi tahun 2020<br>
+                                    - Melakukan analisis data kependudukkan Kab. Ngawi tahun 2020<br>
+                                    - Membuat visualisasi data kependudukkan Kab. Ngawi tahun 2020</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>Asisten Responsi Pengantar Teori Peluang</strong> (Feb 2020 - Mei 2020)</span>
+                                <h6 class="text-black-50">Universitas Brawijaya</h6>
+                                <p class="text-dark fs-6">- Membuat resume dan materi teori peluang<br>
+                                    - Menyampaikan dan melakukan pembelajaran tatap muka kepada praktikan<br>
+                                    - Membuat soal evaluasi pembelajaran</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <h4><strong><span class="text-underline">Organization</span></strong></h4>
+                    <div class="education-list mt-3">
+                        <ul id="list-education">
+                            <li> <span class="text-dark"><strong>Wakil Koordinator Sponsorship National Statistics Challenge</strong> (Mar 2020 - Okt 2020)</span>
+                                <h6 class="text-black-50">Studio Statistika Universitas Brawijaya</h6>
+                                <p class="text-dark fs-6">- Menyusun strategi pencairan dana acara<br>
+                                    - Menjalin kerjasama dengan sponsor yang berhubungan dengan acara<br>
+                                    - Melakukan analisa dana yang dibutuhkan dalam pelaksanaan acara</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>Staf Divisi Kestari Generation of Statistics (Genstat)</strong> (Mei 2019 - Sep 2019)</span>
+                                <h6 class="text-black-50">Universitas Brawijaya</h6>
+                                <p class="text-dark fs-6">- Melakukan rekap data mahasiswa baru jurusan statistika universitas brawijaya<br>
+                                    - Melakukan pemeriksaan nilai mahasiswa baru dalam masa orientasi jurusan statistika universitas brawijaya<br>
+                                    - Melakukan rekap surat dan penerbitan surat keperluan acara</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>Sekretaris OSIS</strong> (Jan 2016 - Jan 2017)</span>
+                                <h6 class="text-black-50">SMAN 2 Ngawi</h6>
+                                <p class="text-dark fs-6">- Membuat pencatatan data surat masuk dan surat keluar<br>
+                                    - Membuat absensi rapat rutin anggota OSIS masa bakti 2016/2017<br>
+                                    - Mencatat kinerja serta pelaksanaan program kerja</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <h4><strong><span class="text-underline">Course & Certificate</span></strong></h4>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card mb-3">
+                                <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <h4><strong><span class="text-underline">Skills</span></strong></h4>
+                    <div class="row">
+                        <div class="col">
+                            <h6>Ms. Excel, Power Point, Word</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Default striped example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Statistics</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Default striped example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Data Analysis</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Data Visualization</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6>Pemograman R</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Pemograman SQL</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Python</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Default striped example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Tableau</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Default striped example" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
