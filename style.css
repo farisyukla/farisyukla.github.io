@@ -1,0 +1,64 @@
+body{
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #E1E1E1;
+}
+
+#navigation {
+    background-color: #1DBC60;
+    height: 90vh;
+    overflow-y: scroll;
+    padding-top: 20px;  
+    border-radius: 15px 0 0 15px;  
+}
+
+#body {
+    background-color: #f5f5f5;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+#icon {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    padding-top: 2px;
+}
+
+.icon-twitter {
+    color: blue;
+}
+
+#icon:hover {
+    cursor: pointer;
+}
+
+#container {
+    background-color: black;
+}
+
+#judul {
+    font-size: 15px;
+}
+
+#download-cv {
+    background-color: #1DBC60;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    height: 40px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+/* Hide scrollbar for Chrome, Safari and Opera */
+#navigation::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+#navigation {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
