@@ -3,16 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Porto Lala</title>
+    <title>Portofolio Lala</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/cv.ico">
   </head>
   <body>
-    <div class="container pt-4">
+    <div class="container-lg pt-4">
+    
+        <nav class="navbar bg-light fixed-top d-lg-none d-xl-none d-xxl-none d-md-block d-sm-block d-xs-block">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Faris Yukla</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sertif</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Test</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
     <div class="row">
-        <div class="col-3 text-center d-none d-lg-block" id="navigation">
+        <div class="col-lg-3 text-center d-none d-lg-block" id="navigation">
             <div class="d-flex flex-column mb-3">
                 <div class="p-2">
                     <img src="img/Lala_Pas_Foto.jpg" alt="foto_lala" width=125 class="thumb rounded-circle">
@@ -33,27 +68,27 @@
                     </div>
                 </div>
                 <div class="p-2 mt-4">
-                    <p class="text-light"><i class="bi bi-house-door"></i> Home</strong></p>
+                    <a class="text-light text-decoration-none d-block mb-2" href="#about-link"><i class="bi bi-house-door"></i> Home</a>
                 </div>
                 <div class="p-2">
-                    <p class="text-light"><strong><i class="bi bi-file-earmark-person"></i> About</strong></p>
+                    <a class="text-light text-decoration-none d-block mb-2" href="#about-link"><i class="bi bi-file-earmark-person"></i> About</a>
                 </div>
                 <div class="p-2">
-                    <p class="text-light"><i class="bi bi-book"></i> Eduaction</strong></p>
+                    <a class="text-light text-decoration-none d-block mb-2" href="#about-link"><i class="bi bi-book"></i> Resume</a>
                 </div>
                 <div class="p-2">
-                    <p class="text-light"><i class="bi bi-clipboard2-check"></i> Skills</strong></p>
+                    <a class="text-light text-decoration-none d-block mb-2" href="#about-link"><i class="bi bi-clipboard2-check"></i> Course & Certificate</a>
                 </div>
                 <div class="p-2">
-                    <p class="text-light"><i class="bi bi-cast"></i> Projects</p>
+                    <a class="text-light text-decoration-none d-block mb-2" href="#about-link"><i class="bi bi-cast"></i> Skills</a>
                 </div>
                 <div class="p-2">
-                    <p class="text-light"><i class="bi bi-person-lines-fill"></i> Contact</p>
+                    <a class="text-light text-decoration-none d-block mb-2" href="#about-link"><i class="bi bi-person-lines-fill"></i> Project</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-9" id="body">
+        <div class="col-lg-9" id="body">
             <div class="d-flex flex-column mb-3">
                 <div class="p-2">
                     <div class="row" id="about-body">
@@ -61,13 +96,13 @@
                             <img src="img/lala_remove_bg.png" alt="lala" width=300>
                         </div>
                         <div class="d-flex flex-column col-md pt-4 justify-content-center order-md-1" id="home">
-                            <div class="p-2 pb-0" id="margin-0">
+                            <div class="p-2 pb-0 pl-0">
                                 <h4><strong><span class="text-underline">Hi,</span> I'm<br>Fari's Yukla Robiatul Masputra</strong></h4>
                             </div>
-                            <div class="p-2 pt-0 pb-0" id="margin-0">
+                            <div class="p-2 pt-0 pb-0 pl-0">
                                 <p class="text-black-50"><strong>Data Analyst & Visualization</strong></p>
                             </div>
-                            <div class="p-2 pb-0 pt-0" id="margin-0">
+                            <div class="p-2 pb-0 pt-0 pl-0">
                                 <button id="download-cv"><i class="bi bi-file-earmark-pdf"></i> Download CV</button>
                                 <button id="portofolio">Portofolio</button>
                             </div>
@@ -75,15 +110,15 @@
                     </div>
                 </div>
                 <div class="p-2">
-                    <h4><strong><span class="text-underline">About</span></strong></h4>
+                    <h4 id="about-link"><strong><span class="text-underline">About</span></strong></h4>
                     <p>Saya lulusan S1 Statistika. Saya terbiasa menganalisa data menggunakan R studio, excel, dan python. Memiliki pengalaman di bidang data analyst dan visualisasi sebagai peserta magang. Sedang mengikuti pembelajaran tableau, dan google data studio. Mampu bekerja baik secara tim maupun individu</p>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md">
                             <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Tempat/Tanggal Lahir:</strong> Ngawi, 23 Mei 2003</p>
                             <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>No. Handphone:</strong> 089624805466</p>
                             <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Kota Asal:</strong> Ngawi, Jawa Timur</p>
                         </div>
-                        <div class="col">
+                        <div class="col-md">
                             <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Umur:</strong> 22 Tahun</p>
                             <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Agama:</strong> Islam</p>
                             <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Gelar:</strong> Sarjana Statistika</p>
@@ -154,7 +189,7 @@
                 <div class="p-2">
                     <h4><strong><span class="text-underline">Course & Certificate</span></strong></h4>
                     <div class="row mt-3">
-                        <div class="col">
+                        <div class="col-sm-3">
                             <div class="card mb-3">
                                 <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -162,7 +197,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-3">
                             <div class="card mb-3">
                                 <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -170,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-3">
                             <div class="card mb-3">
                                 <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -178,7 +213,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-3">
                             <div class="card mb-3">
                                 <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -186,9 +221,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
+                        <div class="col-sm-3">
                             <div class="card mb-3">
                                 <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -201,7 +234,7 @@
                 <div class="p-2">
                     <h4><strong><span class="text-underline">Skills</span></strong></h4>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-sm">
                             <h6>Ms. Excel, Power Point, Word</h6>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Default striped example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
@@ -219,7 +252,7 @@
                                 <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-sm">
                             <h6>Pemograman R</h6>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
