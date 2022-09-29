@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     box-sizing: border-box;
     overflow: hidden;
@@ -48,6 +52,7 @@ body{
     color: #ffffff;
     border: none;
     height: 40px;
+    margin-right: 10px;
 }
 
 .text-underline {
@@ -92,11 +97,16 @@ body{
     height: 40px;
 }
 
+#home {
+    padding-left: 2px;
+}
+
 /* TESTING */
 
-.coba{
+#coba1{
     background-color: red;
     padding-bottom: 1px;
+    width: 100%;
 }
 
 .coba2{
@@ -118,4 +128,11 @@ body{
 #navigation {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+@media only screen and (max-width: 720px) {
+    #body {
+      height: 100vh;
+      padding-top: 50px;
+    }
   }
