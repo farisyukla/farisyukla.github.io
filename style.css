@@ -34,6 +34,10 @@ body{
     color: blue;
 }
 
+.project:hover{
+    cursor: pointer;
+}
+
 #icon:hover {
     cursor: pointer;
 }
