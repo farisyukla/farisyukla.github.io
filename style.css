@@ -38,6 +38,10 @@ body{
     cursor: pointer;
 }
 
+.body-modal {
+    overflow-x: auto;
+}
+
 #icon:hover {
     cursor: pointer;
 }
