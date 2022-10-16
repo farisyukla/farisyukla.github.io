@@ -39,7 +39,7 @@ body{
 }
 
 .body-modal {
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 #icon:hover {
