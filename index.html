@@ -272,10 +272,209 @@
                         </div>
                     </div>
                 </div>
+                <div class="p-2">
+                    <div class="row mt-3">
+                        <h4><strong><span class="text-underline">Project</span></strong></h4>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card mb-3">
+                                <img src="img/arima.png" class="card-img-top img-thumbnail" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EXAMPLE</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     </div>
+
+    <!-- MODAL BOX-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Arima Model</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <h5><strong>Resources</strong></h5>
+            <ul>
+                <li><strong>Sumber Data : </strong><a href="http://www.economicswebinstitute.org/ecdata.htm" target=_blank>Economic Web Institute</a></li>
+                <li><strong>Aplikasi : </strong>Gretl </li>
+            </ul>
+            <h5>Pemrosesan Data</h5>
+            <p>Setelah melakukan input data dari web, pemrosesan data dilakukan untuk memeriksa serta membersikan data untuk memastikan dataset bebas dari missing value dan outlier (Data yang bernilai jauh dari rata-rata keseluruhan). Dalam ARIMA, prosedur ini ditempuh dengan melihat sifat kestasioneritasan terhadap rata-rata melalui uji Dicky Fuller.</p>
+            <ul>
+                <li>Plot Deret Waktu dan Uji Dickey Fuller (1)
+                    <img src="img/project_arima/1_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <img src="img/project_arima/2_table.png" width=400 class="rounded mx-auto d-block">
+                    <p>Plot menunjukkan adanya trend naik sebagai indikasi bahwa data tidak stagnan terhadap rata-ratanya. Hal ini dibuktikan melalui uji Dickey Fuller yaitu menghasilkan penerimaan daerah H0 yang ditandai dengan nilai pvalue > 5%. Kesimpulannya adalah deret waktu tersebut tidak stasioner terhadap rata-rata.</p>
+                </li>
+                <li>Differencing (2)
+                    <p>Untuk itu dilakukan transformasi dengan melakukan differencing (2). Proses differencing (2) dirumuskan sebagai berikut : </p>
+                    <img src="img/project_arima/3_grafik.PNG" width=400 class="rounded mx-auto d-block">
+                    <p>Setelah melakukan differencing (2) dilakukan uji dickey fuller untuk memastikan apakah dataset sudah terbebas dari anomali atau belum. </p>
+                    <img src="img/project_arima/4_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <img src="img/project_arima/5_table.png" width=400 class="rounded mx-auto d-block">
+                    <p>Plot differencing 2 menunjukkan bahwa sudah tidak ada unsur trend. Garis putus-putus menunjukkan rata-rata data deret waktu dimana plot data sudah menyebar disekitarnya. Pengujian Dickey Fuller pun menunjukkan penerimaan daerah H1 yang ditandai dengan nilai p-value < 5%. Artinya deret waktu differencing (2) telah terbebas dari anomali sehingga sudah dapat dipastikan data stagnan terhadap rata-rata. </p>
+                </li>
+            </ul>
+            <h5>Hasil Analisis</h5>
+            <ul>
+                <li>Identifikasi ACF PACF 
+                    <img src="img/project_arima/6_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <p>Berdasarkan korelogram, dapat terlihat bahwa tidak ada lag yang signifikan. ACF dan PACF menunjukkan pola yang sama yaitu pola sinus sehingga hasil differencing 2 kemungkinan memiliki model campuran antara AR dan MA (ARIMA). </p>
+                </li>
+                <li>Diagnostic Model
+                    <p>Dalam hal ini dapat dibentuk 4 model tentative yang dipilih berdasarkan penilaian AIC, dimana AIC terendah akan dipilih sebagai model terbaik.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">No. </th>
+                                <th scope="col">Model</th>
+                                <th scope="col">AIC</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ARIMA (2,2,0)</td>
+                                <td>94,866</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>ARIMA (0,2,2)</td>
+                                <td>93,317</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ARIMA (1,2,1)</td>
+                                <td>93,659</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>ARIMA (2,2,2)</td>
+                                <td>94,171</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                      <p>Dari keempat model tersebut, ARIMA(0,2,2) memiliki AIC terkecil sehingga dipilih sebagai model terbaik untuk meramalkan data Government Net Capital Stock of Canada. </p>
+                </li>
+                <li>Pendugaan Parameter
+                    <p>Dilakukan pendugaan parameter pada model ARIMA(0,2,2) </p>
+                    <img src="img/project_arima/8_table.PNG" width=400 class="rounded mx-auto d-block">
+                    <img src="img/project_arima/9_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <p>Berdasarkan uji white noise korelogram tidak ada lag yang signifikan sehingga sisaan model memenuhi asumsi sebaran normal.</p>
+                </li>
+                <li>Model Peramalan
+                    <p>Model peramalan yang dapat dibentuk dari hasil pendugaan parameter adalah : </p>
+                    <img src="img/project_arima/10_rumus.PNG" width=400 class="rounded mx-auto d-block">
+                </li>
+                <li>Hasil Peramalan
+                    <p>Untuk melihat hasil peramlana maka model perlu di kembalikan ke bentuk differencing (0). </p>
+                    <img src="img/project_arima/11_rumus.PNG" width=400 class="rounded mx-auto d-block">
+                    <p>Peramalan untuk 5 periode kedepan dapat diperoleh dari model tersebut sehingga : </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Obs</th>
+                                <th scope="col">Canada</th>
+                                <th scope="col">U</th>
+                                <th scope="col">Yt*</th>
+                                <th scope="col">2Yt-1</th>
+                                <th scope="col">Yt-2</th>
+                                <th scope="col">Yt</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>1998</td>
+                                <td>365,0</td>
+                                <td>-1,40083</td>
+                                <td>0,336678</td>
+                                <td>718,4922</td>
+                                <td>352,5</td>
+                                <td>366,4</td>
+                            </tr>
+                            <tr>
+                                <td>1999</td>
+                                <td>370,1</td>
+                                <td>-0,47425</td>
+                                <td>-0,09015</td>
+                                <td>729,9349</td>
+                                <td>359,2</td>
+                                <td>370,6</td>
+                            </tr>
+                            <tr>
+                                <td>2000</td>
+                                <td>377,3/td>
+                                <td>1,621061</td>
+                                <td>0,383561</td>
+                                <td>740,2479</td>
+                                <td>365,0</td>
+                                <td>375,7</td>
+                            </tr>
+                            <tr>
+                                <td>2001</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,68285</td>
+                                <td>754,5693</td>
+                                <td>370,1</td>
+                                <td>385,1</td>
+                            </tr>
+                            <tr>
+                                <td>2002</td>
+                                <td></td>
+                                <td></td>
+                                <td>-0,46547</td>
+                                <td>770,2564</td>
+                                <td>377,3</td>
+                                <td>392,5</td>
+                            </tr>
+                            <tr>
+                                <td>2003</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,063</td>
+                                <td>785,0126</td>
+                                <td>385,1</td>
+                                <td>399,9</td>
+                            </tr>
+                            <tr>
+                                <td>2004</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,063</td>
+                                <td>799,8948</td>
+                                <td>392,5</td>
+                                <td>407,5</td>
+                            </tr>
+                            <tr>
+                                <td>2005</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,063</td>
+                                <td>814,903</td>
+                                <td>399,9</td>
+                                <td>415,0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+            <h5>Kesimpulan</h5>
+            <img src="img/project_arima/12_Grafik.PNG" width=400 class="rounded mx-auto d-block">
+            <p>Dari hasil peramalan dapat kita ketahui bahwa government net capital stock Canada akan terus mengalami kenaikan. Tahun 2001 – 2005 mengikuti trend naik sama seperti tahun-tahun sebelumnya. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
