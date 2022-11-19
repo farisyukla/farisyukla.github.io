@@ -34,7 +34,11 @@ body{
     color: blue;
 }
 
-.project:hover.certif:hover{
+.project:hover{
+    cursor: pointer;
+}
+
+.certif:hover{
     cursor: pointer;
 }
 
