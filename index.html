@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio Lala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/cv.ico">
+  </head>
+  <body>
+    <div class="container-lg pt-4">
+    
+        <nav class="navbar bg-light fixed-top d-lg-none d-xl-none d-xxl-none d-md-block d-sm-block d-xs-block">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Faris Yukla</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sertif</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Test</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+    <div class="row">
+        <div class="col-lg-3 text-center d-none d-lg-block" id="navigation">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2">
+                    <img src="img/Lala_Pas_Foto.jpg" alt="foto_lala" width=125 class="thumb rounded-circle">
+                </div>
+                <div class="p-2">
+                    <h2 class="text-light fs-3">Fari's Yukla R. M.</h2>
+                    <p class="text-light" id="judul"><strong>Data Analyst & Visualization</strong></p>
+                </div>
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <div class="rounded-circle text-center" id="icon" width=30>
+                        <p class="icon"><i class="bi bi-linkedin" id="icon-twitter"></i></p>
+                    </div>
+                    <div class="rounded-circle text-center" id="icon" width=30>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="rounded-circle text-center" id="icon" width=30>
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <div class="p-2 mt-4">
+                    <a class="text-light text-decoration-none d-block mb-2" href="#home-link"><i class="bi bi-house-door"></i> Home</a>
+                </div>
+                <div class="p-2">
+                    <a class="text-light text-decoration-none d-block mb-2" href="#project-link"><i class="bi bi-person-lines-fill"></i> Project</a>
+                </div>
+                <div class="p-2">
+                    <a class="text-light text-decoration-none d-block mb-2" href="#skill-link"><i class="bi bi-cast"></i> Skills</a>
+                </div>
+                <div class="p-2">
+                    <a class="text-light text-decoration-none d-block mb-2" href="#course-link"><i class="bi bi-clipboard2-check"></i> Course & Certificate</a>
+                </div>    
+                <div class="p-2">
+                    <a class="text-light text-decoration-none d-block mb-2" href="#about-link"><i class="bi bi-file-earmark-person"></i> About</a>
+                </div>
+                <div class="p-2">
+                    <a class="text-light text-decoration-none d-block mb-2" href="#resume-link"><i class="bi bi-book"></i> Resume</a>
+                </div> 
+            </div>
+        </div>
+
+        <div class="col-lg-9" id="body">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2" id="home-link">
+                    <div class="row" id="about-body">
+                        <div class="col-md order-md-2 text-center" id="image">
+                            <img src="img/lala_remove_bg.png" alt="lala" width=300>
+                        </div>
+                        <div class="d-flex flex-column col-md pt-4 justify-content-center order-md-1" id="home">
+                            <div class="p-2 pb-0 pl-0">
+                                <h4><strong><span class="text-underline">Hi,</span> Saya<br>Fari's Yukla Robiatul Masputra</strong></h4>
+                            </div>
+                            <div class="p-2 pt-0 pb-0 pl-0">
+                                <p class="text-black-50"><strong>Data Analyst & Visualization</strong></p>
+                            </div>
+                            <div class="p-2 pb-0 pt-0 pl-0">
+                                <button id="download-cv" onclick="location.href='https://drive.google.com/file/d/1004UYlUi9lWXYgSkYTKNxcFBZEkF6roV/view?usp=sharing';"><i class="bi bi-file-earmark-pdf"></i> Download CV</button>
+                                <button id="portofolio">Portofolio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 mt-3" id="project-link">
+                    <div class="row mt-3">
+                        <h4><strong><span class="text-underline">Project</span></strong></h4>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card mb-3">
+                                <img src="img/arima.png" class="card-img-top img-thumbnail mx-auto d-block" alt="..." id="project-img">
+                                <div class="card-body">
+                                  <h5 class="card-title">Peramalan ARIMA</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#analisisFaktor">
+                          <div class="card mb-3">
+                              <img src="img/project_faktor/gambar1.png" class="card-img-top img-thumbnail mx-auto d-block" alt="..." id="project-img">
+                              <div class="card-body">
+                                <h5 class="card-title">Analisis Jalur</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#analisisKlaster">
+                          <div class="card mb-3">
+                              <img src="img/project_klaster/gambar3.png" class="card-img-top img-thumbnail mx-auto d-block" alt="..." id="project-img">
+                              <div class="card-body">
+                                <h5 class="card-title">Analisis Klaster</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#googleDataAnalytics">
+                          <div class="card mb-3">
+                              <img src="img/data_studio/gambar1.png" class="card-img-top img-thumbnail mx-auto d-block" alt="..." id="project-img">
+                              <div class="card-body">
+                                <h5 class="card-title">Google Data Logistik Panel</h5>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 mt-2" id="skill-link">
+                    <h4><strong><span class="text-underline">Skills</span></strong></h4>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h6 class="mt-2">Google Data Studio</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Default striped example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Ms. Excel, Power Point, Word</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Default striped example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Statistics</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Default striped example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Data Analysis</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Data Visualization</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <h6>Pemograman R</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Pemograman SQL</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Python</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Default striped example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="mt-2">Tableau</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Default striped example" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 mt-2" id="course-link">
+                    <h4><strong><span class="text-underline">Course & Certificate</span></strong></h4>  
+                    <div class="row mt-3">
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#visualisasiGoogleData">
+                            <div class="card mb-3">
+                                <img src="img/sertif6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Visualisasi Google Data</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#introToProgramming">
+                            <div class="card mb-3">
+                                <img src="img/Sertif7.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Intro to Programming</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#scientificCompetition">
+                            <div class="card mb-3">
+                                <img src="img/Sertif8.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Juara 2 Scientific Competition</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#GoogleAnalyticsModal">
+                            <div class="card mb-3">
+                                <img src="img/Sertif2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Google Data Analytics</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#DataPythonModal">
+                            <div class="card mb-3">
+                                <img src="img/Sertif1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Data with Python</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#RStudioModal">
+                            <div class="card mb-3">
+                                <img src="img/Sertif4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Riset Data with R</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#AsistensiModal">
+                            <div class="card mb-3">
+                                <img src="img/Sertif3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Asistensi Teori Peluang</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 project" data-bs-toggle="modal" data-bs-target="#BusinessPlanModal">
+                            <div class="card mb-3">
+                                <img src="img/Sertif5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Business Plan Competition</h5>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="p-2" id="about-link">
+                    <h4 id="about-link"><strong><span class="text-underline">About</span></strong></h4>
+                    <p>Graduating with a bachelor of Statistics from Brawijaya University, I used to analyze data and make it easy to express with data storytelling. I have work experience as an intern at BPS and have managed a business Ayam Laos Lala. As a problem-solution-oriented person, I like challenges to make data-driven decision-making for stakeholders. I am currently attending some courses on Data Analytics and understand database languages, like Python, R Programming, and SQL.</p>
+                    <div class="row">
+                        <div class="col-md">
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Birthday :</strong> Ngawi, 23 Mei 2000</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Whatsapp :</strong> 089624805466</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Hometown :</strong> Ngawi, Jawa Timur</p>
+                        </div>
+                        <div class="col-md">
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Age :</strong> 22 Years Old</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Religion :</strong> Islam</p>
+                            <p><span class="green-text"><i class="bi bi-caret-right-fill"></i></span> <strong>Degree :</strong> Bachelor of Statistics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2" id="resume-link">
+                    <h4><strong><span class="text-underline">Education</span></strong></h4>
+                    <div class="education-list mt-3">
+                        <ul id="list-education">
+                            <li> <span class="text-dark"><strong>Brawijaya Univerisity</strong> (Aug 2018 - Jul 2022)</span>
+                                <h6 class="text-black-50">Bachelor of Statistics</h6>
+                                <p class="text-dark fs-6">Thesis: Panel Logistic Regression Modelling Using Fixed Effect Approach to Status of Food Security in East Java </p>
+                                <p class="text-dark fs-6">GPA: 3.43/4.00</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>SMAN 2 Ngawi</strong> (Aug 2015 - Apr 2018)</span>
+                                <h6 class="text-black-50">Science</h6>
+                                <p class="text-dark fs-6">Studying all kinds of knowledge in education, especially mathematics and science</p>
+                                <p class="text-dark fs-6">2nd place for scientific writing competition in Scientific Great Moment held by Brawijaya University in 2017 with the title "SITANI APP (Sistem Pertanian Nasional Pewujud Petani Cerdas Era Digitalisasi)"</p>
+                                <p class="text-dark fs-6">Score: 85/100</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <h4><strong><span class="text-underline">Work Experience</span></strong></h4>
+                    <div class="education-list mt-3">
+                        <ul id="list-education">
+                            <li> <span class="text-dark"><strong>Internship Analyst and visualization</strong> (Jul 2021 - Aug 2021)</span>
+                                <h6 class="text-black-50">Badan Pusat Statistik Kabupaten Ngawi</h6>
+                                <p class="text-dark fs-6">- Contributed to the making of the book "Kecamatan Dalam Angka Tahun 2021"<br>
+                                    - Analyzing descriptive and visualization of Ngawi's population data in 2020 for 4 sub-district (Sine, Ngrambe, Kendal, Paron)<br>
+                                    - Visualizing the trend of Ngawi's total population from 1990 to 2020<br>
+                                    - Contributed in a survey of public behavior during pandemic Covid-19</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>Owner Ayam Laos Lala</strong> (Sept 2020 – Jun 2021)</span>
+                                <h6 class="text-black-50">Ayam Laos Lala</h6>
+                                <p class="text-dark fs-6">- Organize the making, packaging, and delivery of products for consumers<br>
+                                    - Promoting the product via social media and selling around 10 boxes in a day<br>
+                                    - Recording the sales transactions and financial reports to plan future business strategies</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>Lab Assistant of The Principles of Probability </strong> (Feb 2020 - May 2020)</span>
+                                <h6 class="text-black-50">Brawijaya University</h6>
+                                <p class="text-dark fs-6">- Guiding the practicum with more than 30 participants during 8 meetings<br>
+                                    - Create 10 cases using for exercise in the practicum<br>
+                                    - Successing of learning with the average final score obtained by the practitioner is predicated A</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-2 mb-5">
+                    <h4><strong><span class="text-underline">Organization</span></strong></h4>
+                    <div class="education-list mt-3">
+                        <ul id="list-education">
+                            <li> <span class="text-dark"><strong>Vice Coordinator at the Sponsorship Division in the National Statistics Challenge (NSC) </strong> (Mar 2020 - Oct 2020)</span>
+                                <h6 class="text-black-50">Studio Statistika, Brawijaya University</h6>
+                                <p class="text-dark fs-6">- Collaborating with sponsors and managed to raise funds of more than IDR 3,000,000<br>
+                                    - Contribute to raising funds with an online shop that has made a profit of more than IDR 1,500,000<br>
+                                    - Creating content and managing Instagram account of NSC's online store which is still active until the procurement of NSC in 2022<br>
+                                    - With the sponsorship coordinator, leading amount of 8 staff to raise fund</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>Staff The Secretarial Division of Generation of Statistics (Genstat)</strong> (May 2019 - Sep 2019)</span>
+                                <h6 class="text-black-50">Brawijaya University</h6>
+                                <p class="text-dark fs-6">- Inputting biodata, attendance, and completeness of assignments during the orientation of new students amount 156 students using Microsoft Excel<br>
+                                    - Inputting attendance of every member and note the meeting<br>
+                                    - Publishing mail for every activity about 10 letters per day</p>
+                            </li>
+                            <li> <span class="text-dark"><strong>Student Council Secretary </strong> (Jan 2016 - Jan 2017)</span>
+                                <h6 class="text-black-50">SMAN 2 Ngawi</h6>
+                                <p class="text-dark fs-6">- Record incoming and outgoing mail<br>
+                                    - Record attendance every members of OSIS in the routine meetings<br>
+                                    - Record the performance, note and evaluation of the work plan of each division</p>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ======================================================= MODAL BOX PROJECT ================================================================== -->
+    <div class="modal fade body-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Arima Model</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <h5><strong>Resources</strong></h5>
+            <ul>
+                <li><strong>Sumber Data : </strong><a href="http://www.economicswebinstitute.org/ecdata.htm" target=_blank>Economic Web Institute</a></li>
+                <li><strong>Aplikasi : </strong>Gretl </li>
+            </ul>
+            <h5>Pemrosesan Data</h5>
+            <p>Setelah melakukan input data dari web, pemrosesan data dilakukan untuk memeriksa serta membersikan data untuk memastikan dataset bebas dari missing value dan outlier (Data yang bernilai jauh dari rata-rata keseluruhan). Dalam ARIMA, prosedur ini ditempuh dengan melihat sifat kestasioneritasan terhadap rata-rata melalui uji Dicky Fuller.</p>
+            <ul>
+                <li>Plot Deret Waktu dan Uji Dickey Fuller (1)
+                    <img src="img/project_arima/1_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <img src="img/project_arima/2_table.png" width=400 class="rounded mx-auto d-block">
+                    <p>Plot menunjukkan adanya trend naik sebagai indikasi bahwa data tidak stagnan terhadap rata-ratanya. Hal ini dibuktikan melalui uji Dickey Fuller yaitu menghasilkan penerimaan daerah H0 yang ditandai dengan nilai pvalue > 5%. Kesimpulannya adalah deret waktu tersebut tidak stasioner terhadap rata-rata.</p>
+                </li>
+                <li>Differencing (2)
+                    <p>Untuk itu dilakukan transformasi dengan melakukan differencing (2). Proses differencing (2) dirumuskan sebagai berikut : </p>
+                    <img src="img/project_arima/3_grafik.PNG" width=400 class="rounded mx-auto d-block">
+                    <p>Setelah melakukan differencing (2) dilakukan uji dickey fuller untuk memastikan apakah dataset sudah terbebas dari anomali atau belum. </p>
+                    <img src="img/project_arima/4_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <img src="img/project_arima/5_table.png" width=400 class="rounded mx-auto d-block">
+                    <p>Plot differencing 2 menunjukkan bahwa sudah tidak ada unsur trend. Garis putus-putus menunjukkan rata-rata data deret waktu dimana plot data sudah menyebar disekitarnya. Pengujian Dickey Fuller pun menunjukkan penerimaan daerah H1 yang ditandai dengan nilai p-value < 5%. Artinya deret waktu differencing (2) telah terbebas dari anomali sehingga sudah dapat dipastikan data stagnan terhadap rata-rata. </p>
+                </li>
+            </ul>
+            <h5>Hasil Analisis</h5>
+            <ul>
+                <li>Identifikasi ACF PACF 
+                    <img src="img/project_arima/6_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <p>Berdasarkan korelogram, dapat terlihat bahwa tidak ada lag yang signifikan. ACF dan PACF menunjukkan pola yang sama yaitu pola sinus sehingga hasil differencing 2 kemungkinan memiliki model campuran antara AR dan MA (ARIMA). </p>
+                </li>
+                <li>Diagnostic Model
+                    <p>Dalam hal ini dapat dibentuk 4 model tentative yang dipilih berdasarkan penilaian AIC, dimana AIC terendah akan dipilih sebagai model terbaik.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">No. </th>
+                                <th scope="col">Model</th>
+                                <th scope="col">AIC</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ARIMA (2,2,0)</td>
+                                <td>94,866</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>ARIMA (0,2,2)</td>
+                                <td>93,317</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ARIMA (1,2,1)</td>
+                                <td>93,659</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>ARIMA (2,2,2)</td>
+                                <td>94,171</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                      <p>Dari keempat model tersebut, ARIMA(0,2,2) memiliki AIC terkecil sehingga dipilih sebagai model terbaik untuk meramalkan data Government Net Capital Stock of Canada. </p>
+                </li>
+                <li>Pendugaan Parameter
+                    <p>Dilakukan pendugaan parameter pada model ARIMA(0,2,2) </p>
+                    <img src="img/project_arima/8_table.PNG" width=400 class="rounded mx-auto d-block">
+                    <img src="img/project_arima/9_grafik.png" width=400 class="rounded mx-auto d-block">
+                    <p>Berdasarkan uji white noise korelogram tidak ada lag yang signifikan sehingga sisaan model memenuhi asumsi sebaran normal.</p>
+                </li>
+                <li>Model Peramalan
+                    <p>Model peramalan yang dapat dibentuk dari hasil pendugaan parameter adalah : </p>
+                    <img src="img/project_arima/10_rumus.PNG" width=400 class="rounded mx-auto d-block">
+                </li>
+                <li>Hasil Peramalan
+                    <p>Untuk melihat hasil peramlana maka model perlu di kembalikan ke bentuk differencing (0). </p>
+                    <img src="img/project_arima/11_rumus.PNG" width=400 class="rounded mx-auto d-block">
+                    <p>Peramalan untuk 5 periode kedepan dapat diperoleh dari model tersebut sehingga : </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Obs</th>
+                                <th scope="col">Canada</th>
+                                <th scope="col">U</th>
+                                <th scope="col">Yt*</th>
+                                <th scope="col">2Yt-1</th>
+                                <th scope="col">Yt-2</th>
+                                <th scope="col">Yt</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>1998</td>
+                                <td>365,0</td>
+                                <td>-1,40083</td>
+                                <td>0,336678</td>
+                                <td>718,4922</td>
+                                <td>352,5</td>
+                                <td>366,4</td>
+                            </tr>
+                            <tr>
+                                <td>1999</td>
+                                <td>370,1</td>
+                                <td>-0,47425</td>
+                                <td>-0,09015</td>
+                                <td>729,9349</td>
+                                <td>359,2</td>
+                                <td>370,6</td>
+                            </tr>
+                            <tr>
+                                <td>2000</td>
+                                <td>377,3/td>
+                                <td>1,621061</td>
+                                <td>0,383561</td>
+                                <td>740,2479</td>
+                                <td>365,0</td>
+                                <td>375,7</td>
+                            </tr>
+                            <tr>
+                                <td>2001</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,68285</td>
+                                <td>754,5693</td>
+                                <td>370,1</td>
+                                <td>385,1</td>
+                            </tr>
+                            <tr>
+                                <td>2002</td>
+                                <td></td>
+                                <td></td>
+                                <td>-0,46547</td>
+                                <td>770,2564</td>
+                                <td>377,3</td>
+                                <td>392,5</td>
+                            </tr>
+                            <tr>
+                                <td>2003</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,063</td>
+                                <td>785,0126</td>
+                                <td>385,1</td>
+                                <td>399,9</td>
+                            </tr>
+                            <tr>
+                                <td>2004</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,063</td>
+                                <td>799,8948</td>
+                                <td>392,5</td>
+                                <td>407,5</td>
+                            </tr>
+                            <tr>
+                                <td>2005</td>
+                                <td></td>
+                                <td></td>
+                                <td>0,063</td>
+                                <td>814,903</td>
+                                <td>399,9</td>
+                                <td>415,0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+            <h5>Kesimpulan</h5>
+            <img src="img/project_arima/12_Grafik.PNG" width=400 class="rounded mx-auto d-block">
+            <p>Dari hasil peramalan dapat kita ketahui bahwa government net capital stock Canada akan terus mengalami kenaikan. Tahun 2001 – 2005 mengikuti trend naik sama seperti tahun-tahun sebelumnya. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model faktor analisis jalur-->
+      <div class="modal fade body-modal" id="analisisFaktor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Analisis Jalur</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <h5><strong>Resources</strong></h5>
+            <ul>
+                <li><strong>Sumber Data : </strong><a href="https://www.bps.go.id/" target=_blank>Badan Pusat Statistik</a></li>
+                <li><strong>Aplikasi : </strong>SPSS </li>
+            </ul>
+            <h5>Variabel</h5>
+            <p>Variabel yang dilibatkan dalam kajian ini adalah faktor-faktor yang berpengaruh bagi kemiskinan di Indonesia berdasarkan beberapa literatur </p>
+            <ul>
+                <li>X1 : Jumlah Penduduk (ribu jiwa)</li>
+                <li>X2 : Pendapatan Domestik Regional Bruto (Juta Rupiah)</li>
+                <li>X3 : Rata-rata lama sekolah penduduk umur ≥ 15 tahun </li>
+                <li>X4 : Tingkat Pengangguran Terbuka (%)</li>
+                <li>Y1 : Indeks Pembangunan Manusia </li>
+                <li>Y2 : Tingkat Kemiskinan (%)</li>
+            </ul>
+            <h5>Model Struktural</h5>
+            <p>Pada pemodelan analisis jalur melibatkan variabel endogen yaitu IPM dan tingkat kemiskinan. Sedangkan variabel eksogen yaitu jumlah penduduk, PDRB, IPM dan Tingkat Pengangguran Terbuka. Adapun IPM merupakan variabel antara sehingga dapat di bentuk model serta diagram jalur sebagai berikut. </p>
+            <img src="img/project_faktor/gambar2.PNG" width=400 class="rounded mx-auto d-block">
+            <img src="img/project_faktor/gambar3.PNG" width=400 class="rounded mx-auto d-block">
+            <img src="img/project_faktor/gambar4.png" width=400 class="rounded mx-auto d-block">
+
+            <h5>Pemenuhan Asumsi</h5>
+            <ul>
+                <li>Asumsi Linearitas
+                    <p>Asumsi linearitas dengan melihat Curve Fit Model dengan tingkat kesalahan sebesar 10% didapatkan hubungan linearitas antara variabel endogen dengan eksogen sebagai berikut :</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Signifikansi</th>
+                                <th scope="col">Linearitas</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">Y1 => X1</th>
+                                <td>Tidak signifikan (pada semua model)</td>
+                                <td>Terpenuhi </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Y1 => X2</th>
+                                <td>Tidak signifikan (pada semua model)</td>
+                                <td>Terpenuhi</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Y1 => X3</th>
+                                <td>Signifikan </td>
+                                <td>Terpenuhi</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Y2 => X1</th>
+                                <td>Tidak signifikan (pada semua model)</td>
+                                <td>Terpenuhi</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Y2 => X2</th>
+                              <td>Tidak signifikan (pada semua model)</td>
+                              <td>Terpenuhi</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </li>
+                <li>Asumsi Model Rekursif 
+                    <p>Salah satu indikasi bahwa tidak terdapat pengaruh bolak-balik antar variabel adalah antara ε_1 dan ε_2 dengan X_1, X_2, X_3, dan X_4 saling bebas. Dalam hal ini, untuk melihat adanya keterkaitan antara sisaan dengan variabel eksogen dibentuk scatter plot antara sisaan dengan masing-masing variabel eksogen.</p>
+                    <p>1.	Scatter Plot untuk model struktural pada variabel IPM </p>
+                    <img src="img/project_faktor/gambar5.PNG" width=400 class="rounded mx-auto d-block">
+                    <p>2.	Scatter Plot untuk model struktural pada variabel Tingkat Kemiskinan</p>
+                    <img src="img/project_faktor/gambar6.PNG" width=400 class="rounded mx-auto d-block">
+                    <p>Dari kedua model structural diperoleh scatter plot yang tidak membentuk pola, sehingga asumsi model rekursif terpenuhi. </p>
+                </li>
+            </ul>
+            <h5>Hasil Analisis</h5>
+            <ul>
+              <li>Pendugaan Parameter
+                  <p>Dilakukan pendugaan parameter pada masing-masing model struktural menggunakan metode OLS dengan bantuan SPSS sehingga model yang terbentuk adalah sebagai berikut : </p>
+                  <img src="img/project_faktor/gambar7.PNG" width=400 class="rounded mx-auto d-block">
+              </li>
+              <li>Validitas Model
+                  <img src="img/project_faktor/gambar8.PNG" width=400 class="rounded mx-auto d-block">
+                  <p>Koefisien determinasi total :</p>
+                  <img src="img/project_faktor/gambar9.PNG" width=400 class="rounded mx-auto d-block">
+                  <p>Berdasarkan penghitungan koefisien determinasi disimpulkan bahwa kontribusi pengaruh variabel eksogen terhadap variabel endogen sebesar 75,9 % sedangkan sisanya sebesar 24,1 % dipengaruhi oleh variabel lain diluar model dan galat.</p>
+              </li>
+              <li>Penujian Hipotesis
+                <p>a = 10%<br>Hipotesis<br>H0 : Eksogen berpengaruh tidak signifikan terhadap endogen <br>H1 : Eksogen berpengaruh signifikan terhadap endogen</p>
+                <table class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Koefisien Jalur</th>
+                          <th scope="col">P-value</th>
+                          <th scope="col">Signifikan</th>
+                      </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                      <tr>
+                          <th scope="row">Y1 => X1</th>
+                          <td>0,252</td>
+                          <td>0,054</td>
+                          <td>Signifikan </td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Y1 => X2</th>
+                          <td>-0,057</td>
+                          <td>0,652</td>
+                          <td>Tidak signifikan</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Y1 => X3</th>
+                          <td>0,747</td>
+                          <td>0</td>
+                          <td>Signifikan</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Y2 => X1</th>
+                          <td>-0,05</td>
+                          <td>0,730</td>
+                          <td>Tidak signifikan</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Y2 => X2</th>
+                        <td>-0,118</td>
+                        <td>0,402</td>
+                        <td>Tidak signifikan</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Y2 => X4</th>
+                        <td>0,011</td>
+                        <td>0,940</td>
+                        <td>Tidak signifikan</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Y2 => Y1</th>
+                        <td>-0,666</td>
+                        <td>0</td>
+                        <td>Signifikan</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>Triming Model
+                <p>Berdasarkan hasil pengujian hipotesis, variabel yang tidak signifikan dipangkas sehingga hubungan antarvariabel tergambar dalam diagram jalur seperti berikut, </p>
+                <img src="img/project_faktor/gambar10.png" width=400 class="rounded mx-auto d-block">
+                <p>Hasil analisis data tingkat kemiskinan di Indonesia tahun 2019 menunjukkan bahwa jumlah penduduk dan rata-rata lama sekolah berpengaruh positif terhadap IPM. IPM bepengaruh negatif terhadap tingkat kemiskinan. Sedangkan PDRB dan tingkat pengangguran terbuka kurang berpengaruh terhadap IPM maupun tingkat kemiskinan. Maka, jumlah penduduk dan rata-rata lama sekolah berpengaruh ke tingkat kemiskinan bersifat tidak langsung (indirect) yaitu melalui IPM. Penghitungan koefisien path pengaruh tidak langsung adalah sebagai berikut, <br>Untuk variabel jumlah penduduk : 0,252 × - 0,666 = -0,168<br>Untuk variabel jumlah penduduk : 0,747 × - 0,666 = -0,498
+                  </p>
+              </li>
+            </ul>
+            <h5>Kesimpulan</h5>
+            <p>Faktor-faktor yang mempengaruhi tingkat kemiskinan di Indonesia pada tahun 2019 adalah IPM, jumlah penduduk, PDRB, rata-rata lama sekolah dan tingkat pengangguran terbuka. Hasil penerapan analisis jalur pada tingkat kemiskinan beserta faktor-faktornya tidak semua variabel signifikan berpengaruh pada variabel endogen dan variabel antara. Variabel yang berpengaruh signifikan terhadap tingkat kemiskinan adalah jumlah penduduk, rata-rata lama sekolah dan IPM. Dengan ini dapat disimpulkan bahwa pada data tingkat kemiskinan di Indonesia pada tahun 2019, IPM berpengaruh  langsung terhadap tingkat kemiskinan sedangkan jumlah penduduk dan rata-rata lama sekolah berpengaruh tidak langsung terhadap tingkat kemiskinan.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Model faktor analisis klaster-->
+    <div class="modal fade body-modal" id="analisisKlaster" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Analisis Klaster Average Linkage</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <h5><strong>Resources</strong></h5>
+          <ul>
+              <li><strong>Sumber Data : </strong>Publikasi BPS Kabupaten Ngawi yang berjudul “Kabupaten Ngawi Dalam Angka Tahun 2021” </li>
+              <li><strong>Aplikasi : </strong>R Studio (Source Code Terlampir)  </li>
+          </ul>
+          <h5>Variabel</h5>
+          <p>Variabel yang digunakan adalah 7 jenis tanaman pangan yang ada di Kabupaten Ngawi. Tanaman pangan merupakan setiap jenis tumbuhan yang dimanfaatkan oleh manusia dalam kurun waktu yang lama di kawasan mereka misalnya seperti di hutan, sebagai kebutuhan pangan mereka (Sunarti, 2007).  Terdapat tujuh jenis komoditas tanaman pangan yang dipanen setiap tahunnya di berbagai kecamatan di Kabupaten Ngawi, antara lain: </p>
+          <ul>
+              <li>X1 : Padi</li>
+              <li>X2 : Jagung</li>
+              <li>X3 : Kedelai</li>
+              <li>X4 : Kacang Tanah</li>
+              <li>X5 : Kacang Hijau</li>
+              <li>X6 : Ubi Kayu</li>
+              <li>X7 : Ubi Jalar</li>
+          </ul>
+          <h5>Pemrosesan Data</h5>
+          <p>PPemrosesan data yang perlu dilakukan dalam analisis klaster adalah dengan melakukan standarisasi data. Standarisasi data bertujuan untuk mentransformasi rentang satuan nilai yang jauh dari data (berkisar antara 0 sampai 100.000) menjadi berkisar antara 0 sampai 1 melalui bentuk Z-Score. Hal ini dilakukan agar penghitungan jarak Euclidean menjadi valid. Z-Score dirumuskan sebagai berikut.</p>
+          <img src="img/project_klaster/gambar1.PNG" width=400 class="rounded mx-auto d-block">
+          <p>Keterangan :<br>x_i	: data ke-i<br>x ̅	: rata-rata data<br>s	: simpangan baku </p>
+          <img src="img/project_klaster/gambar2.PNG" width=400 class="rounded mx-auto d-block">
+
+          <h5>Hasil Analisis</h5>
+          <ul>
+              <li>Analisis Deskriptif 
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col">Variabel</th>
+                              <th scope="col">Rata-rata (Dalam Ton)</th>
+                              <th scope="col">Minimum (Dalam Ton)</th>
+                              <th scope="col">Maksimum (Dalam Ton)</th>
+                          </tr>
+                      </thead>
+                      <tbody class="table-group-divider">
+                          <tr>
+                              <th scope="row">Produksi tanaman padi (X1)</th>
+                              <td>43.656</td>
+                              <td>9827</td>
+                              <td>107.397</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Produksi tanaman jagung (X2)</th>
+                              <td>12.553</td>
+                              <td>105</td>
+                              <td>42.312</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Produksi tanaman kedelai (X3)</th>
+                              <td>65,26</td>
+                              <td>0</td>
+                              <td>317</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Produksi tanaman kacang tanah (X4)</th>
+                              <td>260,3</td>
+                              <td>10</td>
+                              <td>950</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Produksi tanaman kacang hijau (X5)</th>
+                            <td>17,79</td>
+                            <td>0</td>
+                            <td>206</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Produksi tanaman ubi kayu (X6)</th>
+                            <td>3.249</td>
+                            <td>0</td>
+                            <td>21.885</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Produksi tanaman ubi jalar (X7) </th>
+                            <td>1.131</td>
+                            <td>0</td>
+                            <td>9.059</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <ol>
+                      <li>Tanaman padi merupakan jenis komoditas tanaman pangan unggulan di Kabupaten Ngawi. Hal ini dibuktikan dengan total hasil produksi padi sebesar 829.467 ton sehingga menjadikan padi sebagai komoditas dengan hasil produksi terbesar dibanding komoditas lain</li>
+                      <li>Tanaman jagung adalah jenis komoditas tanaman pangan yang menduduki peringkat kedua produksi tertinggi di Kabupaten Ngawi. Total hasil produksi jagung sebesar 238.516 ton. </li>
+                      <li>Tanaman pangan jenis umbi-umbian yang ditanam di Kabupaten Ngawi adalah ubi kayu dan ubi jalar. Total produksi ubi kayu adalah sebesar 61.738 ton sedangkan total produksi ubi jalar sebesar 21.485 ton. </li>
+                      <li>Tanaman kedelai, kacang tanah, dan kacang hijau adalah jenis komoditas tanaman pangan dari jenis kacang-kacangan yang ditanam di Kabupaten Ngawi. Produksi dari komoditas ini merupakan tiga komoditas dengan produksi terendah di Kabupaten Ngawi. 
+                        <img src="img/project_klaster/gambar3.png" width=400 class="rounded mx-auto d-block">
+                      </li>
+                    </ol>
+              </li>
+              <li>Jarak Euclidean 
+                  <p>Tahap awal dari analisis klaster adalah menghitung jarak sebagai ukuran kedekatan antar objek. Pada kajian ini jarak Euclidean digunakan sebagai ukuran jarak untuk menentukan pengelompokan dimana kecamatan dengan jarak yang saling berdekatan akan membentuk suatu kelompok tertentu. Hasil penghitungan jarak terlampir. </p>
+                  <img src="img/project_klaster/gambar4.PNG" width=400 class="rounded mx-auto d-block">
+              </li>
+              <li>Dendogram
+                  <p>Metode average linkage mengelompokkan kecamatan dengan jarak terdekat menjadi satu klaster dan menentukan rata-ratanya sebagai ukuran satu objek untuk dibandingkan dengan objek lain sampai membentuk menjadi satu klaster.</p>
+                  <img src="img/project_klaster/gambar5.PNG" width=400 class="rounded mx-auto d-block">
+                  <p>Hasil average linkage disajikan melalui grafik yang dinamakan dendrogram. </p>
+                  <img src="img/project_klaster/gambar6.png" width=400 class="rounded mx-auto d-block">
+              </li>
+              <li>Validitas Klaster 
+                <p>Kajian ini menggunakan tiga indeks validitas klaster, yaitu indeks silhouette, indeks dunn, dan indeks connectivity</p>
+                <img src="img/project_klaster/gambar7.PNG" width=400 class="rounded mx-auto d-block">
+                <p>Hasil dari penghitungan ketiga indeks tersebut disajikan dalam tabel berikut.</p>
+                <img src="img/project_klaster/gambar8.PNG" width=400 class="rounded mx-auto d-block">
+                <p>Ketiga indeks validitas klaster menunjukkan nilai optimal terjadi ketika klaster berjumlah sebanyak dua.</p>
+                <img src="img/project_klaster/gambar9.png" width=400 class="rounded mx-auto d-block">
+                <p>Dari pengelompokkan yang terbentuk, kecamatan terbagi menjadi dua klaster dimana satu anggota di klaster satu dan 18 anggota di klaster dua.</p>
+                <img src="img/project_klaster/gambar10.PNG" width=400 class="rounded mx-auto d-block">
+              </li>
+          </ul>
+          <h5>Kesimpulan</h5>
+          <img src="img/project_klaster/gambar11.PNG" width=400 class="rounded mx-auto d-block">
+          <p>Rata-rata semua jenis tanaman digunakan dalam penentuan label klaster. Nilai rata-rata klaster satu lebih tinggi dibandingkan klaster dua sehingga klaster satu dilabeli dengan klaster tinggi dan klaster dua dilabeli dengan klaster rendah. Sebagian besar daerah pada klaster tinggi memiliki produksi tanaman pangan sebesar 9.578 ton dan sebagian besar daerah pada klaster rendah menghasilkan produksi sebesar 8.656 ton. </p>
+          <p>Dari 19 kecamatan yang ada di Kabupaten Ngawi dapat dikelompokkan menjadi dua klaster yaitu klaster tinggi dan klaster rendah. Klaster tinggi beranggotakan sebanyak satu kecamatan sedangkan klaster rendah memiliki anggota sebanyak 18 kecamatan. Masing-masing klaster memiliki karakteristik yang berbeda-beda. Secara umum produksi tanaman pangan pada klaster tinggi lebih unggul dibandingkan klaster rendah. Klaster tinggi unggul pada produksi jenis tanaman kacang tanah, ubi kayu, dan ubi jalar. Klaster rendah memproduksi tanaman tertinggi untuk jenis padi, jagung, kedelai, dan kacang hijau</p>
+          
+          <h5>Saran</h5>
+          <p>Setelah mengetahui pengelompokkan dari setiap wilayah kecamatan di Kabupaten Ngawi berdasarkan produksi tanaman pangan saran yang dapat diberikan adalah pemangku kebijakan perlu melakukan strategi yang tepat pada setiap klaster. Misalnya jika ingin mengembangkan produksi tanaman kacang kedelai dan kacang hijau pada klaster tinggi dapat dilakukan upaya khusus, seperti pemberian subsidi pupuk dan memperluas lahan panen pada jenis tanaman tersebut untuk daerah yang tergabung.</p>
+          
+          <h5>Lampiran</h5>
+          <img src="img/project_klaster/gambar12.PNG" width=400 class="rounded mx-auto d-block">
+          <img src="img/project_klaster/gambar13.PNG" width=400 class="rounded mx-auto d-block">
+          <img src="img/project_klaster/gambar14.PNG" width=400 class="rounded mx-auto d-block">
+          <img src="img/project_klaster/gambar15.PNG" width=400 class="rounded mx-auto d-block">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model faktor google data studio-->
+    <div class="modal fade body-modal" id="googleDataAnalytics" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Analisis Logistik Panel Untuk Ketahanan Pangan Provinsi Jawa Timur</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5><strong>Resources</strong></h5>
+            <ul>
+                <li><strong>Jurnal Penulis : </strong><a href="https://drive.google.com/file/d/1-7IIJEiZY08q45DLsQwfPoPZ_ix6zMsg/view?usp=sharing" target=_blank>Jurnal Ketahanan Pangan (Fari's Yukla R.M)</a></li>
+                <li><strong>Tools : </strong>Google Data Studio </li>
+                <li><strong>Dashboard : </strong><a href="https://datastudio.google.com/u/0/reporting/fa3e6369-d221-470f-be7c-bf75415726d9/page/1M" target=_blank>Dashboard Google Data Studio</a></li>
+            </ul>
+            <img src="img/data_studio/gambar1.png" width=1000 class="rounded mx-auto d-block">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================= MODAL BOX CERTIFICATE ======================================== -->
+    <div class="modal" tabindex="-1" id="DataPythonModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Data with Python by Shift Academy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Sertif1.jpg" alt="sertifikat Python" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" id="GoogleAnalyticsModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Google Analytics by Coursera</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Sertif2.png" alt="sertifikat Google Analytics" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" id="RStudioModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sertifikat Pengantar R by Shift Academy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Sertif4.png" alt="sertifikat R" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" id="AsistensiModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Asistensi Teori Peluang</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Sertif3.png" alt="sertifikat Asistensi" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" id="BusinessPlanModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Business Plan Competition</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Sertif5.png" alt="sertifikat Competition Business Plan" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="visualisasiGoogleData">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Visualisasi Google Data Studio by Skill Academy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sertif6.jpg" alt="sertifikat Visualisasi Google Data" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="introToProgramming">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intro to Programming by Kaggle</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Sertif7.png" alt="sertifikat Intro to Programming" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="scientificCompetition">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Juara 2 Scientific Great Moment Tingkat Nasional</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Sertif8.png" alt="sertifikat Kompetisi Juara 2" width=1100>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
